@@ -2,8 +2,8 @@
 # Conditional build:
 %bcond_without	steam		# without steam hlds engine (use plain hlds)
 #
-Summary:	Day Of Defeat - linux server
-Summary(pl):	Day Of Defeat - serwer dla linuxa
+Summary:	Day Of Defeat - Linux server
+Summary(pl):	Day Of Defeat - serwer dla Linuksa
 Name:		dod
 Version:	v10b
 Release:	0.1
@@ -14,18 +14,21 @@ Source0:	%{name}_v10_linux.tar.gz
 Source1:	%{name}_%{version}.tar.gz
 # Source1-md5:	f5be030178e15bfddd24d1bcf391a22a
 URL:		http://www.dayofdefeat.com/
-%if %{without steam} Requires:	hlds
-%else Requires: hlds-steam
+%if !%{with steam}
+Requires:	hlds
+%else
+Requires:	hlds-steam
+%endif
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_chroot_home	/home/hlds
 
 %description
-Day Of Defeat server for linux
+Day Of Defeat server for Linux.
 
 %description -l pl
-Serwer dla Day of Defeat
+Serwer Day of Defeat dla Linuksa.
 
 %prep
 %setup -q -n dod
