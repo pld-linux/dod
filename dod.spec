@@ -10,6 +10,7 @@ Source0:	%{name}_v10_linux.tar.gz
 # Source0-md5:	f438bc12bb9a64c92f8545e9b2d6399c
 Source1:	%{name}_%{version}.tar.gz
 # Source1-md5:	f5be030178e15bfddd24d1bcf391a22a
+URL:		http://www.dayofdefeat.com/
 Requires:	hlds
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
