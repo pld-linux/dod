@@ -7,7 +7,7 @@ Summary(pl):	Day Of Defeat - serwer dla Linuksa
 Name:		dod
 Version:	v10b
 Release:	0.1
-License:	Unknown (Distributable)
+License:	unknown (distributable)
 Group:		Applications/Games
 Source0:	%{name}_v10_linux.tar.gz
 # Source0-md5:	f438bc12bb9a64c92f8545e9b2d6399c
