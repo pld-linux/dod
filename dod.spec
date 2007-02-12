@@ -3,7 +3,7 @@
 %bcond_without	steam		# without steam hlds engine (use plain hlds)
 #
 Summary:	Day Of Defeat - Linux server
-Summary(pl.UTF-8):   Day Of Defeat - serwer dla Linuksa
+Summary(pl.UTF-8):	Day Of Defeat - serwer dla Linuksa
 Name:		dod
 Version:	v10b
 Release:	0.1
